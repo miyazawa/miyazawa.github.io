@@ -104,4 +104,3 @@ steps:
     -H "Accept: application/vnd.github.mister-fantastic-preview+json" \
     -H "Authorization: Basic $(gh_auth_header)"
   displayName: '[GitHub] Get Page Build Status'
-
