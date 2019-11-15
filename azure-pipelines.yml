@@ -37,7 +37,7 @@ steps:
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Configure User'
 
-- script: 'git checkout development'
+- script: 'git checkout master'
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Set development branch'
 
@@ -51,7 +51,7 @@ steps:
 #      3. Remove all files in $(Build.StagingDirectory) except .git/
 #      4. Copy everything from /tmp/build to $(Build.StagingDirectory)/
 #      5. Create the commit and push it
-- script: 'git checkout development'
+- script: 'git checkout master'
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Switch to development branch for $(Build.StagingDirectory)'
 
